@@ -81,6 +81,12 @@ body::before {
 .nav a {
   color: var(--muted);
   font-size: 0.95rem;
+  transition: color 160ms ease;
+}
+
+.nav a:hover,
+.brand:hover {
+  color: var(--text);
 }
 
 .panel {
@@ -101,6 +107,21 @@ main {
   padding: 48px 32px 36px;
 }
 
+.hero-intro {
+  max-width: 840px;
+}
+
+.hero-kicker,
+.section-subcopy {
+  color: var(--muted);
+}
+
+.hero-kicker {
+  margin-bottom: 16px;
+  font-size: 0.96rem;
+  letter-spacing: 0.02em;
+}
+
 .eyebrow,
 .section-label {
   margin: 0 0 10px;
@@ -117,6 +138,12 @@ h3,
 p,
 ul {
   margin-top: 0;
+}
+
+h2,
+h3,
+strong {
+  color: var(--text);
 }
 
 h1 {
@@ -144,6 +171,11 @@ li,
 span {
   color: var(--muted);
   line-height: 1.7;
+}
+
+.section-subcopy {
+  margin-top: 10px;
+  max-width: 720px;
 }
 
 .hero-copy {
@@ -199,7 +231,7 @@ span {
   flex: 1 1 180px;
   padding: 18px;
   border-radius: 20px;
-  background: rgba(255,255,255,0.03);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.025));
   border: 1px solid rgba(255,255,255,0.06);
 }
 
@@ -218,6 +250,14 @@ span {
 
 .section-heading {
   margin-bottom: 22px;
+}
+
+.strengths-panel {
+  overflow: hidden;
+}
+
+.strengths-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .timeline {
@@ -267,6 +307,14 @@ span {
   border-radius: 22px;
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.card:hover,
+.contact-grid a:hover {
+  transform: translateY(-2px);
+  border-color: rgba(125, 184, 255, 0.22);
+  background: rgba(255,255,255,0.045);
 }
 
 .card.wide {
@@ -292,6 +340,7 @@ span {
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.03);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
 
 .contact-grid span {
