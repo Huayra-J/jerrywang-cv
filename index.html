@@ -23,8 +23,12 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="ambient ambient-c"></div>
     <div class="site-shell">
-      <header class="topbar">
+      <header class="topbar reveal">
         <a class="brand" href="#home">Jerry Wang</a>
         <div class="topbar-right">
           <nav class="nav">
@@ -42,7 +46,7 @@
       </header>
 
       <main id="home">
-        <section class="hero panel">
+        <section class="hero panel reveal hero-glow interactive-surface">
           <p class="eyebrow">Sydney, Australia</p>
           <div class="hero-intro">
             <p class="hero-kicker">Jerry Wang · Healthcare Integration Analyst</p>
@@ -57,7 +61,7 @@
           </div>
         </section>
 
-        <section id="about" class="panel section-grid">
+        <section id="about" class="panel section-grid reveal">
           <div>
             <p class="section-label">About</p>
             <h2>Technical depth, production focus, and clear delivery</h2>
@@ -72,36 +76,37 @@
           </div>
         </section>
 
-        <section class="panel strengths-panel">
+        <section class="panel strengths-panel reveal">
           <div class="section-heading">
             <p class="section-label">What I bring</p>
             <h2>Strong fit for integration-heavy teams that value calm execution</h2>
           </div>
           <div class="cards strengths-cards">
-            <article class="card">
+            <article class="card reveal-card tilt-card">
               <h3>Production-minded</h3>
               <p>I work comfortably in environments where message failures, routing issues, and downstream data problems need fast, careful resolution.</p>
             </article>
-            <article class="card">
+            <article class="card reveal-card tilt-card">
               <h3>Healthcare domain context</h3>
               <p>My background includes digital health, pathology, clinical systems, and the practical realities of healthcare interface delivery.</p>
             </article>
-            <article class="card">
+            <article class="card reveal-card tilt-card">
               <h3>Build + support balance</h3>
               <p>I can move between design, implementation, testing, deployment coordination, and production support without losing context.</p>
             </article>
           </div>
         </section>
 
-        <section id="experience" class="panel">
+        <section id="experience" class="panel reveal">
           <div class="section-heading">
             <p class="section-label">Experience</p>
             <h2>Professional Experience</h2>
           </div>
 
           <div class="timeline">
-            <article class="timeline-item">
+            <article class="timeline-item reveal-item">
               <div class="timeline-meta">
+                <span class="timeline-dot" aria-hidden="true"></span>
                 <span>11/2023 — Present</span>
                 <span>Sydney, NSW</span>
               </div>
@@ -117,8 +122,9 @@
               </div>
             </article>
 
-            <article class="timeline-item">
+            <article class="timeline-item reveal-item">
               <div class="timeline-meta">
+                <span class="timeline-dot" aria-hidden="true"></span>
                 <span>10/2022 — 11/2023</span>
                 <span>Darwin, NT</span>
               </div>
@@ -133,8 +139,9 @@
               </div>
             </article>
 
-            <article class="timeline-item">
+            <article class="timeline-item reveal-item">
               <div class="timeline-meta">
+                <span class="timeline-dot" aria-hidden="true"></span>
                 <span>04/2022 — 10/2022</span>
                 <span>Darwin, NT</span>
               </div>
@@ -148,8 +155,9 @@
               </div>
             </article>
 
-            <article class="timeline-item">
+            <article class="timeline-item reveal-item">
               <div class="timeline-meta">
+                <span class="timeline-dot" aria-hidden="true"></span>
                 <span>04/2020 — 04/2022</span>
                 <span>Darwin, NT</span>
               </div>
@@ -166,37 +174,37 @@
           </div>
         </section>
 
-        <section id="skills" class="panel">
+        <section id="skills" class="panel reveal">
           <div class="section-heading">
             <p class="section-label">Skills</p>
             <h2>Core capabilities</h2>
             <p class="section-subcopy">A practical mix of healthcare integration, platform work, debugging, and delivery.</p>
           </div>
           <div class="cards">
-            <article class="card">
+            <article class="card reveal-card tilt-card">
               <h3>Healthcare Integration</h3>
               <p>HL7 v2, REST APIs, ESB, interface design, routing, transformation, validation, production support, clinical data flows.</p>
             </article>
-            <article class="card">
+            <article class="card reveal-card tilt-card">
               <h3>Platforms</h3>
               <p>InterSystems IRIS, Caché, ObjectScript, Ensemble, MuleSoft, healthcare integration engines, pathology and LIS-related environments.</p>
             </article>
-            <article class="card">
+            <article class="card reveal-card tilt-card">
               <h3>Development & Data</h3>
               <p>ObjectScript, Python, SQL, JSON, XML, integration logic, API troubleshooting, data transformation, technical investigation.</p>
             </article>
-            <article class="card">
+            <article class="card reveal-card tilt-card">
               <h3>Tools & Delivery</h3>
               <p>Git, Bitbucket, Jira, Confluence, Postman, VS Code, CI/CD, Azure, AWS, GCP, Docker, deployment coordination.</p>
             </article>
-            <article class="card wide">
+            <article class="card wide reveal-card tilt-card">
               <h3>AI-Assisted Development</h3>
               <p>Claude Code, ChatGPT/Codex, Gemini CLI, debugging, refactoring, documentation drafting, workflow automation, and agent-based development workflows with manual review controls.</p>
             </article>
           </div>
         </section>
 
-        <section id="certifications" class="panel section-grid certifications">
+        <section id="certifications" class="panel section-grid certifications reveal">
           <div>
             <p class="section-label">Certifications & Education</p>
             <h2>Formal training and industry certifications</h2>
@@ -217,22 +225,22 @@
           </div>
         </section>
 
-        <section id="contact" class="panel contact-panel">
+        <section id="contact" class="panel contact-panel reveal">
           <div>
             <p class="section-label">Contact</p>
             <h2>If you'd like to get in touch, reach me via the details below</h2>
             <p class="section-subcopy">Email, phone, and LinkedIn are the best ways to reach me.</p>
           </div>
           <div class="contact-grid">
-            <a href="mailto:Jerry.wangrj@gmail.com">
+            <a class="reveal-card tilt-card" href="mailto:Jerry.wangrj@gmail.com">
               <span>Email</span>
               <strong>Jerry.wangrj@gmail.com</strong>
             </a>
-            <a href="tel:+61404542838">
+            <a class="reveal-card tilt-card" href="tel:+61404542838">
               <span>Phone</span>
               <strong>+61 404 542 838</strong>
             </a>
-            <a href="https://linkedin.com/in/ruijie-wang" target="_blank" rel="noreferrer">
+            <a class="reveal-card tilt-card" href="https://linkedin.com/in/ruijie-wang" target="_blank" rel="noreferrer">
               <span>LinkedIn</span>
               <strong>linkedin.com/in/ruijie-wang</strong>
             </a>
